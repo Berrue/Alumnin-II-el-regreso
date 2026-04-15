@@ -6,13 +6,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         HashMap<String, Alumno> alumnos = new HashMap<>();
+        String nombre_r = "";
         while (true) {
             System.out.println("------ Alumnin 3.0 ------");
             System.out.println("¿Estas registrado?: ");
             String chequeo = scanner.nextLine();
             if (chequeo.equals("si")) {
                 System.out.println("Ingrese su nombre");
-                String nombre_r = scanner.nextLine();
+                nombre_r = scanner.nextLine();
                 if (alumnos.containsKey(nombre_r)){
                     System.out.println("Hola, "+ nombre_r + ", Ingresa tu contraseña: ");
                     String v_contrasenia = scanner.nextLine();
@@ -39,7 +40,14 @@ public class Main {
                 System.out.println("Escribi bien porfa");
                 continue;
         }
-
             }
+        while (true){
+            System.out.println("----- Menu -----");
+            System.out.println("¿Donde queres dirigirte? \n1. Registro de materias \n2. Ingresar notas \n3. Ver notas \n4. Darse de baja de materias \n5. Salir del sistema\n-");
+            int opcion = scanner.nextInt();
+            if (opcion.equals(1)){
+                System.out.println("esaaa");
+            }
+        }
         }
     }
