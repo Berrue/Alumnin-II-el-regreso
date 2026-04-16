@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Alumno {
     String nombre;
     String contrasenia;
-    HashMap<String, Integer> materiasInscriptas;
+    HashMap<String, Integer, integer> materiasInscriptas;
 
     public Alumno(String nombre, String password) {
         this.nombre = nombre;
